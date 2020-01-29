@@ -33,6 +33,10 @@ executables:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
+    ld-options:
+    - -static
+    extra-lib-dirs:
+    - ./gmp-6.1.2/lib
     dependencies:
     - static-link
 
